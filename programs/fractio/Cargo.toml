@@ -1,0 +1,16 @@
+[package]
+name = "fractio"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "fractio"
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+[dependencies]
+anchor-lang.workspace = true
+anchor-spl.workspace = true

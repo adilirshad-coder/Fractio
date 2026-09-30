@@ -1,0 +1,12 @@
+[toolchain]
+anchor_version = "0.31.1"
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+fractio = "Fg6PaFpoGXkYsidMpWxTWqkZ7FEfcYkgMQHGqjf2Kk4Y"
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+[scripts]
+test = "cargo test --manifest-path programs/fractio/Cargo.toml"

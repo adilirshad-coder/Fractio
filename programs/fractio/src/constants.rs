@@ -1,0 +1,9 @@
+pub const GLOBAL_SEED:&[u8]=b"global";
+pub const PROJECT_SEED:&[u8]=b"project";
+pub const OFFERING_SEED:&[u8]=b"offering";
+pub const POSITION_SEED:&[u8]=b"position";
+pub const SEED_VAULT_SEED:&[u8]=b"seed-vault";
+pub const CURVE_SEED:&[u8]=b"curve";
+pub const ESCROW_SEED:&[u8]=b"escrow";
+pub const MILESTONE_SEED:&[u8]=b"milestone";
+pub const GRADUATION_SEED:&[u8]=b"graduation";
