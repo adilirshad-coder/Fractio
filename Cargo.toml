@@ -1,6 +1,17 @@
 [workspace]
 members = ["backend", "programs/fractio"]
 resolver = "2"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1
+
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
@@ -9,11 +20,11 @@ license = "UNLICENSED"
 anchor-lang = "0.31.1"
 anchor-spl = { version = "0.31.1", features = ["token_2022", "associated_token"] }
 anyhow = "1"
+base64 = "0.22"
 async-trait = "0.1"
 axum = { version = "0.8", features = ["macros", "ws"] }
 chrono = { version = "0.4", features = ["serde"] }
 config = "0.15"
-jsonwebtoken = "9"
 jsonwebtoken = "9"
 redis = { version = "0.27", features = ["tokio-comp", "connection-manager"] }
 serde = { version = "1", features = ["derive"] }

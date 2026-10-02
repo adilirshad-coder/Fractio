@@ -1,12 +1,22 @@
 [toolchain]
 anchor_version = "0.31.1"
+
 [features]
-seeds = false
+resolution = true
 skip-lint = false
+
+[programs.devnet]
+fractio = "2ZwVTBRrzyTmzm5UJSoPjuvJYr1cr9qWkzWEqJq5WFBN"
+
 [programs.localnet]
-fractio = "Fg6PaFpoGXkYsidMpWxTWqkZ7FEfcYkgMQHGqjf2Kk4Y"
+fractio = "2ZwVTBRrzyTmzm5UJSoPjuvJYr1cr9qWkzWEqJq5WFBN"
+
+[registry]
+url = "https://api.apr.dev"
+
 [provider]
-cluster = "Localnet"
+cluster = "localnet"
 wallet = "~/.config/solana/id.json"
+
 [scripts]
 test = "cargo test --manifest-path programs/fractio/Cargo.toml"

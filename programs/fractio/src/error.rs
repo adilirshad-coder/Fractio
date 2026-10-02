@@ -7,6 +7,7 @@ use anchor_lang::prelude::*;
  #[msg("Ownership cap would be exceeded")] OwnershipCapExceeded,
  #[msg("Allocation basis points must sum to 10000")] InvalidAllocation,
  #[msg("Invalid mint or token program")] InvalidMint,
+ #[msg("Total supply must match an allowed preset")] InvalidSupply,
  #[msg("Invalid vault or PDA")] InvalidVault,
  #[msg("Slippage limit exceeded")] SlippageExceeded,
  #[msg("Graduation condition is not met")] GraduationNotReady,

@@ -1,3 +1,5 @@
 # Token model
 
-Token-2022 is preferred. The scaffold isolates mint/extension validation and transfer hook boundaries, but selects no extension set. Supply choices (100M and 1B) are presets to add to configuration; no supply is minted here. Allocation uses integer basis points with the stated configurable 15/45/15/25 draft distribution. External AMM support for transfer-hook mints is unverified and must be tested before adoption.
+The program currently accepts total supply presets of 100,000,000 or 1,000,000,000 whole tokens. The integer represents whole tokens at this stage.
+
+// TODO(decision): Choose the token decimal count and define how whole-token supply maps to base units before token minting is implemented.
