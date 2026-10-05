@@ -103,7 +103,7 @@ Every project follows the same standard supply distribution so valuations are co
 | **Chain** | Solana (mainnet + devnet), Token-2022 |
 | **Programs** | Rust, Anchor; Streamflow for vesting; Pyth / Switchboard for external prices |
 | **Frontend** | Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, shadcn/ui, Privy, Lightweight Charts, Zustand / TanStack Query |
-| **Backend** | Node.js (NestJS / Fastify) or Rust (Axum), REST/GraphQL + WebSockets, BullMQ jobs |
+| **Backend** | Rust (Axum), REST/GraphQL + WebSockets, BullMQ jobs |
 | **Data** | PostgreSQL, Redis, Cloudflare R2 / S3, IPFS (Pinata) |
 | **Infra** | Helius / Triton RPC + gRPC streaming (Alchemy / QuickNode fallback), Jito bundles for critical txs |
 | **Ops** | Squads multisig + timelocks, Sentry, Prometheus / Grafana |
